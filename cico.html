@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <title>Document</title>
+  </head>
+
+  <!-- ALL CSS STYLES STARTS HERE -->
+  <style>
+    .activate {
+      letter-spacing: 0.5em;
+      padding-bottom: 20px;
+    }
+    .image {
+      padding-bottom: 20px;
+    }
+    .image:hover {
+      transform: scale(1.1);
+    }
+    #button {
+      background-color: rgb(40, 218, 108);
+      font-size: 20px;
+      border: none;
+      padding: 12px;
+      border-radius: 9px;
+    }
+    #button:hover {
+      background-color: whitesmoke;
+    }
+    .input {
+      letter-spacing: 0.5em;
+      color: white;
+    }
+
+    .inp {
+      border: none;
+      border-bottom: 2px solid white;
+      outline: none;
+      background: transparent;
+      color: white;
+    }
+    #login {
+      background-color: blue;
+    }
+
+    body {
+      font: "Raleway", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      top: 15%;
+      background: linear-gradient(to right, rgb(4, 10, 37), rgb(7, 2, 19));
+    }
+  </style>
+
+  <!-- CSS STYLES ENDS HERE -->
+  <body>
+    <div class="container">
+
+      <div class="activate text-center text-light">
+        <marquee behavior="scroll" direction="down" class="mt-3" scrollamount="2"
+          >We make transactions easier for you</marquee
+        >
+        <div>
+          <h1 class="mt-5">ACTIVATE AGENT</h1>
+        </div>
+      </div>
+  
+      <div class=" mb-4">
+        <img src="images/cico.png" alt="cico" height="200px" width="300px" />
+      </div>
+  
+      <div id="login mt-4">
+        <form action="" method="" id="validationForm">
+          <div class="input text-center text-light">
+            <strong> <h3>Phone Number:</h3> </strong> <br />
+            <input
+              class="inp"
+              type="text"
+              name="phonenumber"
+              id="phoneNumber"
+              placeholder="PhoneNumber"
+              size="40"
+              required
+            /><br /><br />
+  
+            <strong><h3>Activation Code:</h3></strong><br /><input
+              class="inp"
+              type="text"
+              name="activation"
+              id="activation"
+              placeholder="ActivationCode"
+              size="40"
+              required
+            /><br /><br />
+          </div>
+  
+          <div class="button text-center py-4">
+            <button type="submit" id="button">ACTIVATE</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="cico.js"></script>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>
